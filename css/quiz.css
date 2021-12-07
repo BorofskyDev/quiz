@@ -1,0 +1,76 @@
+body {
+    color: #fff;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(to right, #023788 15%, #650D89, #920075, #F6019D, #D40078);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(211, 247, 6);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: rgb(212, 0, 255);
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color:rgb(63, 239, 245)
+}
+
+.correct {
+    background: linear-gradient(32deg, #a3fae7, rgb(0, 211, 112));
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgb(253, 159, 159), rgb(235, 59, 59));
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    color:rgb(212, 0, 255)
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+    color: #650D89
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid #000;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: linear-gradient(to right, #023788 15%, #650D89, #920075, #F6019D, #D40078);
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
